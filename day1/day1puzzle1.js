@@ -14,8 +14,23 @@ const stringData = convertToArray(data);
 const intData = stringData.map(Number).sort();
 
 // counter on each end, with if condition to check if too high or too low
+function checkSum(intData) {
+    let i = 0;
+    let j = intData.length - 1;
+    while (intData[i] + intData[j] !== 2020) {
+        if (intData[i] + intData[j] > 2020) {
+            j--;
+        } 
+        else if (intData[i] + intData[j] < 2020) {
+            i++;
+        }
+    }
+    console.log(intData[i]);
+    console.log(intData[j]);
+    return intData[i] * intData[j];
+}
 
-
+console.log(checkSum(intData));
 
 
 module.exports = convertToArray;
