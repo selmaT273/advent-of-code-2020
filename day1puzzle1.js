@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-fs.readFile('inputday1puzzle1.txt', (err, data) => {
-    if (err) throw err;
-    const text = data.toString();
-    const numberarray = text.split("\n");
-    
-    return numberarray;
-})
+const data = fs.readFileSync('inputday1puzzle1.txt');
+
+function convertToArray(textData) {
+    return textData.toString().split("\n");
+}
+
+module.exports = convertToArray;

@@ -4,7 +4,7 @@
   "description": "Solutions for the Advent of Code puzzles",
   "main": "day1puzzle1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
