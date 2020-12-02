@@ -2,5 +2,8 @@ const fs = require('fs');
 
 fs.readFile('inputday1puzzle1.txt', (err, data) => {
     if (err) throw err;
-    console.log(data.toString());
+    const text = data.toString();
+    const numberarray = text.split("\n");
+    
+    return numberarray;
 })
