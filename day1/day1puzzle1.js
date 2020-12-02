@@ -33,4 +33,4 @@ function checkSum(intData) {
 console.log(checkSum(intData));
 
 
-module.exports = convertToArray;
+// module.exports = convertToArray;
