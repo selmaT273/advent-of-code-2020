@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const data = fs.readFileSync('day1/inputday1puzzle1.txt');
+const data = fs.readFileSync('./inputday1puzzle1.txt');
 
 // converts text file data to a string array
 function convertToArray(textData) {
