@@ -11,7 +11,7 @@ function convertToArray(textData) {
 const stringData = convertToArray(data);
 
 // convert to int array and sort 
-const intData = stringData.map(Number).sort();
+const intData = stringData.map(Number).sort((a, b) => (a - b));
 
 console.log(intData[intData.length - 1]);
 console.log(intData[intData.length - 2]);
@@ -32,16 +32,16 @@ function checkTripleSum(numData) {
             i++;
         }
 
-        console.log(i, k, j);
-        console.log(numData[i], numData[k], numData[j]);
-        console.log(numData[i] + numData[k] + numData[j]);
+        // console.log(i, k, j);
+        // console.log(numData[i], numData[k], numData[j]);
+        // console.log(numData[i] + numData[k] + numData[j]);
 
     }
 
     console.log(numData[i]);
     console.log(numData[j]);
     console.log(numData[k]);
-    return numData[i] * numData[j];
+    return numData[i] * numData[j] * numData[k];
 }
 
 console.log(checkTripleSum(intData));

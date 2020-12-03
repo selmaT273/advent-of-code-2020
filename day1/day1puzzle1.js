@@ -11,7 +11,7 @@ function convertToArray(textData) {
 const stringData = convertToArray(data);
 
 // convert to int array and sort 
-const intData = stringData.map(Number).sort();
+const intData = stringData.map(Number).sort((a, b) => (a - b));
 
 // counter on each end, with if condition to check if too high or too low
 function checkSum(intData) {
