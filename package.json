@@ -1,0 +1,23 @@
+{
+  "name": "advent-of-code-2020",
+  "version": "1.0.0",
+  "description": "Solutions for the Advent of Code puzzles",
+  "main": "day1puzzle1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selmaT273/advent-of-code-2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/selmaT273/advent-of-code-2020/issues"
+  },
+  "homepage": "https://github.com/selmaT273/advent-of-code-2020#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
